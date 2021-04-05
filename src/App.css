@@ -10,3 +10,15 @@
   color: #61DAFB;
   font-size: 7em;
 }
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2em;
+  }
+}
