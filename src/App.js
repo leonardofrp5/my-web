@@ -5,7 +5,7 @@ import Home from 'page/application/Home';
 function App() {
   return (
     <>
-    <Home />
+      <Home />
     </>
   );
 }
