@@ -1,14 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   align-items: center;
-  background-color: #282C34;
+  background-color: #282c34;
   display: flex;
+  flex-direction: column;
   height: 100vh;
   justify-content: center;
   width: 100%;
 }
+
+.imgProfile {
+  border-radius: 50%;
+  box-shadow: 0 10px 10px -10px white;
+  height: 30%;
+}
+
 .title {
-  color: #61DAFB;
-  font-size: 7em;
+  color: #61dafb;
+  font-size: 2em;
+  padding: 20px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
