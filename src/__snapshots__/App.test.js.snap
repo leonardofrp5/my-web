@@ -4,10 +4,15 @@ exports[`#App Check component App 1`] = `
 <div
   class="container"
 >
-  <h1
+  <img
+    alt="img_leonardo"
+    class="imgProfile"
+    src="imgProfile.png"
+  />
+  <h3
     class="title"
   >
     Leonardo Romero Perez
-  </h1>
+  </h3>
 </div>
 `;

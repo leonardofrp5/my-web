@@ -14,9 +14,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
-    "standardEslint": "standard && node my-tests.js"
+    "standardEslint": "standard",
+    "lint": "standard --fix",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -37,9 +39,12 @@
     ]
   },
   "devDependencies": {
+    "husky": "^6.0.0",
     "standard": "16.0.3"
   },
   "standard": {
-    "env": ["jest"]
+    "env": [
+      "jest"
+    ]
   }
 }
