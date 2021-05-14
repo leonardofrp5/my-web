@@ -1,0 +1,34 @@
+@import 'scss/variables/colors';
+
+.container {
+  align-items: center;
+  background-color: $shark;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.imgProfile {
+  border-radius: 50%;
+  box-shadow: 0 10px 10px -10px$white;
+  height: 25%;
+}
+
+.title {
+  color: $malibu;
+  font-size: 1.8em;
+  padding: 20px;
+  text-align: center;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  padding: 0 10px;
+
+  path {
+    fill: $white;
+  }
+}

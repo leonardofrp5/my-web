@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Home Check component Home 1`] = `
+<div
+  class="container"
+>
+  <img
+    alt="img_leonardo"
+    class="imgProfile"
+    src="imgProfile.png"
+  />
+  <h3
+    class="title"
+  >
+    Leonardo Romero Perez
+  </h3>
+  <div
+    class="containerIcons"
+  >
+    <a
+      href="https://github.com/leonardofrp5"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <svg
+        class="icon"
+      >
+        github.svg
+      </svg>
+    </a>
+    <a
+      href="https://www.linkedin.com/in/leonardo-fabian-romero-perez-516479168/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <svg
+        class="icon"
+      >
+        linkedin.svg
+      </svg>
+    </a>
+    <a
+      href="https://twitter.com/leofrp"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <svg
+        class="icon"
+      >
+        twitter.svg
+      </svg>
+    </a>
+    <a
+      href="https://www.instagram.com/dev.leofrp/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <svg
+        class="icon"
+      >
+        instagram.svg
+      </svg>
+    </a>
+  </div>
+</div>
+`;
