@@ -1,6 +1,8 @@
+@import 'scss/variables/colors';
+
 .container {
   align-items: center;
-  background-color: #282c34;
+  background-color: $shark;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -10,12 +12,12 @@
 
 .imgProfile {
   border-radius: 50%;
-  box-shadow: 0 10px 10px -10px white;
+  box-shadow: 0 10px 10px -10px$white;
   height: 25%;
 }
 
 .title {
-  color: #80ddf7;
+  color: $malibu;
   font-size: 1.8em;
   padding: 20px;
   text-align: center;
@@ -27,18 +29,6 @@
   padding: 0 10px;
 
   path {
-    fill: #fff;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .title {
-    font-size: 4em;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .title {
-    font-size: 2em;
+    fill: $white;
   }
 }
