@@ -2,15 +2,35 @@
 
 exports[`#Home Check component Home 1`] = `
 <div
-  class="container"
+  class="container container--dark"
 >
+  <div
+    class="switch"
+  >
+    <input
+      class="switch__input"
+      id="Switch"
+      type="checkbox"
+    />
+    <label
+      class="switch__label"
+      for="Switch"
+    >
+      <span
+        class="switch__indicator"
+      />
+      <span
+        class="switch__decoration"
+      />
+    </label>
+  </div>
   <img
     alt="img_leonardo"
-    class="imgProfile"
+    class="container--dark--imgProfile"
     src="imgProfile.png"
   />
   <h3
-    class="title"
+    class="container--dark--title"
   >
     Leonardo Romero Perez
   </h3>
@@ -23,7 +43,7 @@ exports[`#Home Check component Home 1`] = `
       target="_blank"
     >
       <svg
-        class="icon"
+        class="container--dark--icon"
       >
         github.svg
       </svg>
@@ -34,7 +54,7 @@ exports[`#Home Check component Home 1`] = `
       target="_blank"
     >
       <svg
-        class="icon"
+        class="container--dark--icon"
       >
         linkedin.svg
       </svg>
@@ -45,7 +65,7 @@ exports[`#Home Check component Home 1`] = `
       target="_blank"
     >
       <svg
-        class="icon"
+        class="container--dark--icon"
       >
         twitter.svg
       </svg>
@@ -56,11 +76,17 @@ exports[`#Home Check component Home 1`] = `
       target="_blank"
     >
       <svg
-        class="icon"
+        class="container--dark--icon"
       >
         instagram.svg
       </svg>
     </a>
   </div>
+  <footer
+    class="footer"
+  >
+    Fabricated by Leonardo Romero Copyright © 
+    2021
+  </footer>
 </div>
 `;

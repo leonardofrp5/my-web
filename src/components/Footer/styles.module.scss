@@ -1,0 +1,14 @@
+@import 'scss/variables/colors';
+
+.footer {
+  align-items: center;
+  background-color: $malibu;
+  bottom: 0;
+  display: flex;
+  font-size: 0.7em;
+  height: 30px;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
