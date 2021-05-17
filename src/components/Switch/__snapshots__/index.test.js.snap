@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Switch Check component Switch 1`] = `
+<div
+  class="switch"
+>
+  <input
+    class="switch__input"
+    id="Switch"
+    type="checkbox"
+  />
+  <label
+    class="switch__label"
+    for="Switch"
+  >
+    <span
+      class="switch__indicator"
+    />
+    <span
+      class="switch__decoration"
+    />
+  </label>
+</div>
+`;

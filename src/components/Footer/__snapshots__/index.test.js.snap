@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Footer Check component Footer 1`] = `
+<footer
+  class="footer"
+>
+  Fabricated by Leonardo Romero Copyright © 
+  2021
+</footer>
+`;

@@ -23,7 +23,6 @@ function Home () {
 
   useEffect(() => {
     const body = document.querySelector('body')
-    //eslint-disable-line
     const currentTheme = !theme ? window.localStorage.getItem('theme') || 'dark' : theme
     body.setAttribute('theme', currentTheme)
     setTheme(currentTheme)
