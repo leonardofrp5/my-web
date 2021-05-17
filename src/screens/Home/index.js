@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import Footer from 'components/Footer'
+import Switch from 'components/Switch'
 
 import imgProfile from 'assets/Images/imgProfile.png'
 import { ReactComponent as IconGitHub } from 'assets/Images/github.svg'
@@ -20,54 +21,52 @@ function Home () {
     setTheme(newTheme)
   }
 
+  useEffect(() => {
+    const body = document.querySelector('body')
+    //eslint-disable-line
+    const currentTheme = !theme ? window.localStorage.getItem('theme') || 'dark' : theme
+    body.setAttribute('theme', currentTheme)
+    setTheme(currentTheme)
+  }, [theme])
+
   return (
     <>
-      <div className={`container container--${theme}`}>
-        <div className={styles.switch}>
-          <input
-            type='checkbox'
-            className={styles.switch__input}
-            id='Switch'
-            onChange={() => toggleTheme()}
-          />
-          <label className={styles.switch__label} htmlFor='Switch'>
-            <span className={styles.switch__indicator} />
-            <span className={styles.switch__decoration} />
-          </label>
-        </div>
-        <img className={`container--${theme}--imgProfile`} src={imgProfile} alt='img_leonardo' />
-        <h3 className={`container--${theme}--title`}>Leonardo Romero Perez</h3>
+      <Switch toggleTheme={toggleTheme} />
+      <div className={styles.containerAboutMe}>
+        <img className={styles.imgProfile} src={imgProfile} alt='img_leonardo' />
+        <h3 className={styles.title}>Leonardo Romero Perez</h3>
         <div className={styles.aboutMe}>
-          <p className={`container--${theme}--paragraph`}>
+          <p className={styles.paragraph}>
             Hi, I'm Leonardo Romero, a passionate self-taught web developer and a system engineer from
             Colombia. My passion for software lies with dreaming up ideas and making them come true with
             elegant interfaces, and code quality of the things I build.
           </p>
-          <p className={`container--${theme}--paragraph`}>
+          <p className={styles.paragraph}>
             I like to work with people that care more for the people and work together for an objectiveI like
             to work with people that care more for the people and work together for an objective
           </p>
+          <p className={styles.paragraph}>Made in Cúcuta and deployed in Medellín</p>
         </div>
         <div className={styles.containerIcons}>
           <a href='https://github.com/leonardofrp5' target='_blank' rel='noopener noreferrer'>
-            <IconGitHub className={`container--${theme}--icon`} />
+            <IconGitHub className={styles.icon} />
           </a>
           <a
             href='https://www.linkedin.com/in/leonardo-fabian-romero-perez-516479168/'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <IconLinkedin className={`container--${theme}--icon`} />
+            <IconLinkedin className={styles.icon} />
           </a>
           <a href='https://twitter.com/leofrp' target='_blank' rel='noopener noreferrer'>
-            <IconTwitter className={`container--${theme}--icon`} />
+            <IconTwitter className={styles.icon} />
           </a>
           <a href='https://www.instagram.com/dev.leofrp/' target='_blank' rel='noopener noreferrer'>
-            <IconInstagram className={`container--${theme}--icon`} />
+            <IconInstagram className={styles.icon} />
           </a>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </>
   )
 }

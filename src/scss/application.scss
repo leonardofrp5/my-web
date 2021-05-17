@@ -1,83 +1,24 @@
 @import 'fonts/fonts';
-@import 'scss/variables/colors';
+// @import 'scss/variables/colors';
 
 * {
-  padding: 0;
-  margin: 0;
   font-family: $font;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
-  width: 100%;
+body[theme='dark'] {
+  --background-color: #282C34;
+  --text-color: #FFF;
+  --title-color: #80DDF7;
+}
 
-  &--dark {
-    background-color: $shark;
+body[theme='light'] {
+  --background-color: #FFF;
+  --text-color: #282C34;
+  --title-color: #282C34;
+}
 
-    &--imgProfile {
-      border-radius: 50%;
-      box-shadow: 0 10px 10px -10px $white;
-      height: 25%;
-    }
-
-    &--title {
-      color: $malibu;
-      font-size: 1.8em;
-      padding: 20px;
-      text-align: center;
-    }
-
-    &--paragraph {
-      color: $white;
-      padding: 10px;
-      text-align: justify;
-    }
-
-    &--icon {
-      height: 30px;
-      width: 30px;
-      padding: 0 10px;
-
-      path {
-        fill: $white;
-      }
-    }
-  }
-
-  &--light {
-    background-color: $white;
-
-    &--imgProfile {
-      border-radius: 50%;
-      box-shadow: 0 10px 10px -10px $shark;
-      height: 25%;
-    }
-
-    &--title {
-      color: $shark;
-      font-size: 1.8em;
-      padding: 20px;
-      text-align: center;
-    }
-
-    &--paragraph {
-      color: $shark;
-      padding: 10px;
-      text-align: justify;
-    }
-
-    &--icon {
-      height: 30px;
-      width: 30px;
-      padding: 0 10px;
-
-      path {
-        fill: $shark;
-      }
-    }
-  }
+body {
+  background-color: var(--background-color);
 }
