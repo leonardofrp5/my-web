@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`#Home Check component Home 1`] = `
+exports[`#Switch Check component Switch 1`] = `
 <div
   class="switch"
 >

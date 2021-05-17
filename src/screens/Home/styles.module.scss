@@ -1,34 +1,67 @@
-@import 'scss/variables/colors';
-
-.container {
+.containerAboutMe {
   align-items: center;
-  background-color: $shark;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  justify-content: center;
-  width: 100%;
+  margin-top: 50px;
 }
 
 .imgProfile {
   border-radius: 50%;
-  box-shadow: 0 10px 10px -10px$white;
-  height: 25%;
+  box-shadow: 0 10px 10px -10px var(--text-color);
+  width: 15%;
 }
 
 .title {
-  color: $malibu;
+  color: var(--title-color);
   font-size: 1.8em;
   padding: 20px;
   text-align: center;
 }
 
+.paragraph {
+  color: var(--text-color);
+  padding: 10px;
+  text-align: justify;
+}
+
+.aboutMe {
+  width: 40%;
+}
+
+.containerIcons {
+  margin: 20px 0;
+}
+
 .icon {
   height: 30px;
-  width: 30px;
   padding: 0 10px;
+  width: 30px;
 
   path {
-    fill: $white;
+    fill: var(--text-color);
+  }
+}
+
+@media (max-width: 900px) {
+  .imgProfile {
+    width: 40%;
+  }
+
+  .aboutMe {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 899px) {
+  .containerAboutMe {
+    margin-top: 20px;
+  }
+
+  .imgProfile {
+    width: 40%;
+  }
+
+  .aboutMe {
+    width: 90%;
   }
 }
