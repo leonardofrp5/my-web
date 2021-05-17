@@ -1,4 +1,4 @@
-// @import 'scss/variables/colors';
+@import 'scss/variables/colors';
 
 // .container {
 //   align-items: center;
@@ -32,6 +32,14 @@
 //     fill: $white;
 //   }
 // }
+
+.aboutMe {
+  width: 40%;
+}
+
+.containerIcons {
+  padding-top: 20px;
+}
 
 .switch {
   display: inline-block;
